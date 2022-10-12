@@ -1,9 +1,14 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import QuizCatagories from '../Quiz-Catagories/QuizCatagories';
 
 const Hero = () => {
+  const quizCatagories = useLoaderData();
+  const quizCatagoriesAll = quizCatagories.data;
+  console.log(quizCatagoriesAll);
     return (
       <div>
-        <div className="hero min-h-screen bg-slate-600">
+        <div className="hero min-h-fit">
           <div className="hero-content flex-col lg:flex-row">
             <img
               src="https://placeimg.com/260/400/arch"
@@ -20,8 +25,14 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-7">
+          {quizCatagoriesAll.map((quiz) => (
+            <QuizCatagories key={quiz.id} quiz={quiz}></QuizCatagories>
+          ))}
+        </div>
       </div>
     );
-};
+  };
+  
 
 export default Hero;

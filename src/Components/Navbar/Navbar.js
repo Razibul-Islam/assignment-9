@@ -5,12 +5,12 @@ import { useState } from "react";
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
     return (
-      <div className="w-full bg-[#3d424f] shadow">
+      <div className="w-full bg-gray-600 shadow">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <NavLink to="/">
-                <h2 className="text-2xl font-bold font-mono">Quizer</h2>
+                <h2 className="text-4xl text-white font-bold font-mono">Quizer</h2>
               </NavLink>
               <div className="md:hidden">
                 <button
