@@ -2,8 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
 import Hero from "../Hero/Hero";
 import Blog from "../Blog/Blog";
-import About from "../About/About";
 import Error from "../Error/Error";
+import Statics from "../Statics/Statics";
 
 export const router = createBrowserRouter([
     {
@@ -24,8 +24,8 @@ export const router = createBrowserRouter([
                 element: <Blog></Blog>
             },
             {
-                path: '/about',
-                element: <About></About>
+                path: '/statics',
+                element: <Statics></Statics>
             }
         ]
     }, {

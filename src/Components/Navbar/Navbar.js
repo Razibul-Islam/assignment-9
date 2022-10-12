@@ -10,7 +10,9 @@ const Navbar = () => {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <NavLink to="/">
-                <h2 className="text-4xl text-white font-bold font-mono">Quizer</h2>
+                <h2 className="text-4xl text-white font-bold font-mono">
+                  Quizer
+                </h2>
               </NavLink>
               <div className="md:hidden">
                 <button
@@ -56,25 +58,19 @@ const Navbar = () => {
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 font-mono">
+              <ul className="items-center text-3xl justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 font-mono">
                 <li>
-                  <NavLink to="/" className="text-white hover:text-blue-600">
+                  <NavLink to="/" className="text-white hover:text-black">
                     Home
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink
-                    to="/about"
-                    className="text-white hover:text-blue-600"
-                  >
-                    Topics
+                  <NavLink to="/statics" className="text-white hover:text-black">
+                    Statics
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink
-                    to="/blog"
-                    className="text-white hover:text-blue-600"
-                  >
+                  <NavLink to="/blog" className="text-white hover:text-black">
                     Blog
                   </NavLink>
                 </li>
