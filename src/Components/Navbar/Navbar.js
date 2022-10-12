@@ -14,7 +14,7 @@ const Navbar = () => {
               </NavLink>
               <div className="md:hidden">
                 <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
@@ -56,16 +56,28 @@ const Navbar = () => {
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <NavLink to="/" className="text-white hover:text-blue-600">
-                  Home
-                </NavLink>
-                <NavLink to="/blog" className="text-white hover:text-blue-600">
-                  Blog
-                </NavLink>
-                <NavLink to="/about" className="text-white hover:text-blue-600">
-                  About
-                </NavLink>
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 font-mono">
+                <li>
+                  <NavLink to="/" className="text-white hover:text-blue-600">
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/about"
+                    className="text-white hover:text-blue-600"
+                  >
+                    Topics
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/blog"
+                    className="text-white hover:text-blue-600"
+                  >
+                    Blog
+                  </NavLink>
+                </li>
               </ul>
             </div>
           </div>
