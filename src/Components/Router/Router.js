@@ -4,6 +4,7 @@ import Hero from "../Hero/Hero";
 import Blog from "../Blog/Blog";
 import Error from "../Error/Error";
 import Statics from "../Statics/Statics";
+import InnerQuiz from "../InnerQuiz/InnerQuiz";
 
 export const router = createBrowserRouter([
     {
@@ -18,6 +19,15 @@ export const router = createBrowserRouter([
                     );
                 },
                 element: <Hero></Hero>
+            },
+            {
+                path: '/:quiz',
+                loader: (params) => {
+                    return fetch(
+                      `https://openapi.programming-hero.com/api/quiz/${params.quiz}`
+                    );
+                },
+                element: <InnerQuiz></InnerQuiz>
             },
             {
                 path: '/blog',

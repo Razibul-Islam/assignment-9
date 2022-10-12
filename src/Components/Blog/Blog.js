@@ -10,7 +10,7 @@ const Blog = () => {
       <div className="my-10">
         <div
           tabIndex={0}
-          className="collapse w-3/5 bg-gray-600 text-white mx-auto bg- collapse-plus border border-base-300 bg-base-100 rounded-box"
+          className="collapse w-3/5 bg-black text-white mx-auto bg- collapse-plus border border-base-300 bg-base-100 rounded-box"
         >
           <div className="collapse-title text-xl font-medium">
             What is the purpas of react router
@@ -27,7 +27,7 @@ const Blog = () => {
         </div>
         <div
           tabIndex={0}
-          className="collapse w-3/5 bg-gray-600 text-white mx-auto bg- collapse-plus border border-base-300 bg-base-100 rounded-box"
+          className="collapse w-3/5 bg-black text-white mx-auto bg- collapse-plus border border-base-300 bg-base-100 rounded-box"
         >
           <div className="collapse-title text-xl font-medium">
             How does contex api work
@@ -44,7 +44,7 @@ const Blog = () => {
         </div>
         <div
           tabIndex={0}
-          className="collapse w-3/5 bg-gray-600 text-white mx-auto bg- collapse-plus border border-base-300 bg-base-100 rounded-box"
+          className="collapse w-3/5 bg-black text-white mx-auto bg- collapse-plus border border-base-300 bg-base-100 rounded-box"
         >
           <div className="collapse-title text-xl font-medium">
             write about useref
