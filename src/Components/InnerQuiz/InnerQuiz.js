@@ -2,7 +2,6 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 import Quiz from "../Quiz/Quiz";
 
-
 const InnerQuiz = () => {
   const data = useLoaderData().data;
   // console.log(data);
@@ -10,9 +9,9 @@ const InnerQuiz = () => {
   return (
     <div>
       <h1 className="text-7xl font-semibold text-center my-5">Start Quiz</h1>
-      {
-        questions.map(question => <Quiz key={id} questions={question}></Quiz>)
-      }
+      {questions.map((question) => (
+        <Quiz key={id} questions={question}></Quiz>
+      ))}
     </div>
   );
 };
