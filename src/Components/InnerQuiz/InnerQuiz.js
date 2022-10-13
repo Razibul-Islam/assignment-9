@@ -1,29 +1,18 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
+import Quiz from "../Quiz/Quiz";
+
 
 const InnerQuiz = () => {
+  const data = useLoaderData().data;
+  // console.log(data);
+  const { id, logo, name, questions, total } = data;
   return (
     <div>
       <h1 className="text-7xl font-semibold text-center my-5">Start Quiz</h1>
-      <div className="w-3/5 border-2 border-red-600 mx-auto">
-        <div>
-                  <p>question:</p>
-                  
-        </div>
-        <div className="grid grid-cols-2 grid-rows-2">
-          <p>
-            <input type="radio" name="radio-1" className="radio" />
-          </p>
-          <p>
-            <input type="radio" name="radio-1" className="radio" />
-          </p>
-          <p>
-            <input type="radio" name="radio-1" className="radio" />
-          </p>
-          <p>
-            <input type="radio" name="radio-1" className="radio" />
-          </p>
-        </div>
-      </div>
+      {
+        questions.map(question => <Quiz key={id} questions={question}></Quiz>)
+      }
     </div>
   );
 };
